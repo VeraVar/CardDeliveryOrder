@@ -24,7 +24,7 @@ public class CardDeliveryOrderTest {
         $("[data-test-id='phone'] input").setValue("+70123456789");
         $("[data-test-id='agreement'] .checkbox__box").click();
         $(".button").click();
-        $("[data-test-id='notification']").waitUntil(visible, 15000).shouldHave(text("Успешно!" +
-                "Встреча успешно забронирована на 02.09.2020 " + date));
+        $("[data-test-id='notification']").waitUntil(visible, 15000).shouldHave(text("Успешно! " +
+                "Встреча успешно забронирована на " + date));
     }
 }
